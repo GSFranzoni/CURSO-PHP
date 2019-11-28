@@ -1,0 +1,54 @@
+body.exercicio {
+    grid-template-rows: 120px 60px 1fr 60px;
+    grid-template-areas: 
+        "grid-header"
+        "grid-nav"
+        "grid-main"
+        "grid-footer";
+    grid-template-columns: 1fr;
+}
+
+.header {
+    grid-template: grid-header;
+}
+
+.nav {
+    grid-template: grid-nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    background-color: #555;
+}
+
+.nav > a {
+    padding: 5px;
+    margin: 2px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main {
+    grid-template: grid-main;
+    height: calc(100vh - 240px);
+}
+
+.footer {
+    grid-template: grid-footer;
+}
+
+.nav > a.verde {
+    background-color: #4CAF50;
+}
+
+.nav > a.vermelho {
+    background-color: #F44336;
+}
+
+div.titulo {
+    font-size: 2.8rem;
+    padding: 10px;
+    border-bottom: 2px solid #444;
+}
