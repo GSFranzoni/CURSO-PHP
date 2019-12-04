@@ -4,14 +4,15 @@
     box-sizing: border-box;
 }
 
-body {
+body.index {
     height: 100vh;
     margin: 0;
     display: grid;
-    grid-template-rows: 120px 1fr 60px;
+    grid-template-rows: 120px 60px 1fr 60px;
     grid-template-columns: 1fr;
     grid-template-areas: 
         "grid-header"
+        "grid-nav"
         "grid-main"
         "grid-footer";
 }
@@ -40,11 +41,41 @@ body {
     font-size: 1.6rem;
 }
 
+.index .nav {
+    grid-template: grid-nav;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    background-color: #555;
+}
+
+.nav > a {
+    padding: 8px;
+    margin: 2px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav > a.verde {
+    background-color: #4CAF50;
+}
+
+.nav > a.vermelho {
+    background-color: #F44336;
+}
+
+.nav > a.azul {
+    background-color: #1867c0;
+}
+
 .main {
     grid-area: grid-main;
     background: #f0f0f0;
     padding: 20px;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 240px);
 }
 
 .conteudo {
@@ -101,6 +132,19 @@ body {
     background-color: #EEE;
 }
 
+
+.footer {
+    grid-area: grid-footer;
+    background: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 20px;
+    font-size: 1.2rem;
+    color: #444;
+}
+
 .modulo.verde { border: 2px solid #4CAF50 }
 .modulo.verde > h3 { background-color: #4CAF50; }
 
@@ -131,15 +175,12 @@ body {
 .modulo.laranja-escuro { border: 2px solid #E65527 }
 .modulo.laranja-escuro > h3 { background-color: #E65527; }
 
-footer {
-    grid-area: grid-footer;
-    background: #fff;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: row;
-    padding-right: 20px;
-    font-size: 1.2rem;
-    color: #444;
-}
 
+span.usuario {
+    flex-grow: 1;
+    justify-self: flex-start;
+    color: white;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}

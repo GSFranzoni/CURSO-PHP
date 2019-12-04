@@ -130,11 +130,49 @@
         </ul>
     </div>
     <div class="modulo verde">
-        <h3>Namespace</h3>
+        <h3>Tratamento Erros</h3>
         <ul>
             <li><a href="exercicio.php?dir=tratamento_erros&file=try_catch">Try/Catch</a></li>
             <li><a href="exercicio.php?dir=tratamento_erros&file=erros_personalizados">Erros personalizados</a></li>
             <li><a href="exercicio.php?dir=tratamento_erros&file=desafio_erros">Desafio Erros</a></li>
+            <li><a href="exercicio.php?dir=tratamento_erros&file=gerenciador_erros">Error Handler</a></li>
+        </ul>
+    </div>
+    <div class="modulo vermelho">
+        <h3>Sessão</h3>
+        <ul>
+            <li><a href="exercicio.php?dir=sessao&file=basico_sessao">Básico - Sessão</a></li>
+            <li><a href="exercicio.php?dir=sessao&file=gerenciando_sessao">Gerenciando Sessão</a></li>
+        </ul>
+    </div>
+    <div class="modulo azul">
+        <h3>API</h3>
+        <ul>
+            <li><a href="exercicio.php?dir=api&file=datas_01">Datas #01</a></li>
+            <li><a href="exercicio.php?dir=api&file=datas_02">Datas #02</a></li>
+            <li><a href="exercicio.php?dir=api&file=escrever_arquivo">Escrever arquivo</a></li>
+            <li><a href="exercicio.php?dir=api&file=ler_arquivo">Ler arquivo</a></li>
+            <li><a href="exercicio.php?dir=api&file=upload">Upload</a></li>
+            <li><a href="exercicio.php?dir=api&file=download">Download</a></li>
+        </ul>
+    </div>
+    <div class="modulo roxo">
+        <h3>API</h3>
+        <ul>
+            <li><a href="exercicio.php?dir=formulario&file=basico">Formulário - Básico</a></li>
+        </ul>
+    </div>
+    <div class="modulo laranja">
+        <h3>DB</h3>
+        <ul>
+            <li><a href="exercicio.php?dir=db&file=criar_banco">Criar banco</a></li>
+            <li><a href="exercicio.php?dir=db&file=criar_tabela">Criar tabela</a></li>
+            <li><a href="exercicio.php?dir=db&file=consultar">Consultar</a></li>
+            <li><a href="exercicio.php?dir=db&file=excluir_1">Excluir #1</a></li>
+            <li><a href="exercicio.php?dir=db&file=excluir_2">Excluir #2</a></li>
+            <li><a href="exercicio.php?dir=db&file=inserir_1">Inserir #1</a></li>
+            <li><a href="exercicio.php?dir=db&file=inserir_2">Inserir #2</a></li>
+            <li><a href="exercicio.php?dir=db&file=alterar">Alterar</a></li>
         </ul>
     </div>
 </nav>
